@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import heroImage from "@/assets/hero-co2-capture.jpg";
+import heroImage from "@/assets/hero-bg-geothermal.jpg";
 
 export function HeroSection() {
   return (
