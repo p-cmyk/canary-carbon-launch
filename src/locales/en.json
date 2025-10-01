@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "technology": "Technology",
+    "about": "About",
+    "liveData": "Live Data"
+  },
+  "hero": {
+    "title": "Capturing Carbon,",
+    "titleHighlight": "Securing Tomorrow",
+    "description": "Revolutionary CO₂ capture technology that transforms industrial emissions into valuable resources, creating a sustainable future for generations to come.",
+    "exploreSolutions": "Explore Solutions",
+    "watchDemo": "Watch Demo",
+    "stats": {
+      "captureRate": "CO₂ Capture Rate",
+      "operation": "Continuous Operation",
+      "captured": "Tons CO₂ Captured"
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "allRightsReserved": "All rights reserved",
+    "fundedBy": "Funded by the European Union and the Government of the Canary Islands"
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "description": "Discover our innovative CO₂ capture solutions"
+  },
+  "technology": {
+    "title": "Our Technology",
+    "description": "Learn about the technology behind our CO₂ capture"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about CanaryCarbon and our mission"
+  },
+  "liveData": {
+    "title": "Live Data",
+    "description": "Monitor our real-time CO₂ capture data"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "eco": "Eco"
+  },
+  "language": {
+    "spanish": "Español",
+    "english": "English"
+  }
+}

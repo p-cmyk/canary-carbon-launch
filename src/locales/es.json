@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "solutions": "Soluciones",
+    "technology": "Tecnología",
+    "about": "Acerca de",
+    "liveData": "Datos en Vivo"
+  },
+  "hero": {
+    "title": "Capturando Carbono,",
+    "titleHighlight": "Asegurando el Mañana",
+    "description": "Tecnología revolucionaria de captura de CO₂ que transforma las emisiones industriales en recursos valiosos, creando un futuro sostenible para las generaciones venideras.",
+    "exploreSolutions": "Explorar Soluciones",
+    "watchDemo": "Ver Demo",
+    "stats": {
+      "captureRate": "Tasa de Captura de CO₂",
+      "operation": "Operación Continua",
+      "captured": "Toneladas de CO₂ Capturadas"
+    }
+  },
+  "footer": {
+    "contact": "Contacto",
+    "allRightsReserved": "Todos los derechos reservados",
+    "fundedBy": "Financiado por la Unión Europea y el Gobierno de Canarias"
+  },
+  "solutions": {
+    "title": "Nuestras Soluciones",
+    "description": "Descubre nuestras innovadoras soluciones de captura de CO₂"
+  },
+  "technology": {
+    "title": "Nuestra Tecnología",
+    "description": "Conoce la tecnología detrás de nuestra captura de CO₂"
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "description": "Conoce más sobre CanaryCarbon y nuestra misión"
+  },
+  "liveData": {
+    "title": "Datos en Vivo",
+    "description": "Monitorea nuestros datos de captura de CO₂ en tiempo real"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "eco": "Eco"
+  },
+  "language": {
+    "spanish": "Español",
+    "english": "English"
+  }
+}
