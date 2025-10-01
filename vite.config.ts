@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // GitHub Pages usa el nombre del repositorio como base path
-  base: mode === "production" ? "/canary-carbon-launch/" : "/",
+  // Dominio personalizado usa "/" como base path
+  base: "/",
   server: {
     host: "::",
     port: 8080,
