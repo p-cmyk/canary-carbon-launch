@@ -1,6 +1,6 @@
 {
   "nav": {
-    "solutions": "Solutions",
+    "services": "Services",
     "technology": "Technology",
     "about": "About",
     "liveData": "Live Data"
@@ -23,8 +23,8 @@
     "fundedBy": "Funded by the European Union and the Government of the Canary Islands"
   },
   "solutions": {
-    "title": "Our Solution",
-    "intro": "As an entity specialized in climate innovation, we offer solutions for private and public organizations related to sustainability and carbon capture.",
+    "title": "Our Services",
+    "intro": "Our team of scientists and engineers at CanaryCarbon offers specialized services for private and public organizations related to sustainability and carbon capture.",
     "services": "Services",
     "servicesList": {
       "environmental": "Environmental impact reports",

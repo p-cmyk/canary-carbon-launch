@@ -1,8 +1,8 @@
 {
   "nav": {
-    "solutions": "Soluciones",
+    "services": "Servicios",
     "technology": "Tecnología",
-    "about": "Acerca de",
+    "about": "Nosotros",
     "liveData": "Datos en Vivo"
   },
   "hero": {
@@ -23,8 +23,8 @@
     "fundedBy": "Financiado por la Unión Europea y el Gobierno de Canarias"
   },
   "solutions": {
-    "title": "Nuestra Solución",
-    "intro": "Como entidad especializada en innovación climática, ofrecemos soluciones para organismos privados y públicos relacionados con la sostenibilidad y la captura de carbono.",
+    "title": "Nuestros Servicios",
+    "intro": "Nuestro equipo de científicos e ingenieros de CanaryCarbon ofrece servicios especializados para organismos privados y públicos relacionados con la sostenibilidad y la captura de carbono.",
     "services": "Servicios",
     "servicesList": {
       "environmental": "Informes de impacto medioambiental",

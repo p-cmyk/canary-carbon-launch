@@ -23,16 +23,18 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Link to="/contact">
-              <Button size="lg" className="group">
+            <Link to="/solutions" className="w-full sm:w-auto">
+              <Button size="lg" className="group w-full sm:w-auto">
                 {t.hero.exploreSolutions}
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Button size="lg" variant="outline">
-              <Play className="mr-2 h-4 w-4" />
-              {t.hero.watchDemo}
-            </Button>
+            <Link to="/contact" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                <Play className="mr-2 h-4 w-4" />
+                {t.hero.watchDemo}
+              </Button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
