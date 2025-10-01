@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 const Contact = () => {
   const { t } = useLanguage();
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,24 +20,55 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Here you would typically send the data to a backend
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: t.contact.success,
-      duration: 5000,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY || "YOUR_ACCESS_KEY_HERE",
+          name: formData.name,
+          email: formData.email,
+          entity: formData.entity,
+          message: formData.message,
+          subject: `Nueva solicitud de demo de ${formData.entity}`,
+        }),
+      });
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      entity: "",
-      message: "",
-    });
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: t.contact.success,
+          duration: 5000,
+        });
+
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          entity: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: t.contact.error,
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -124,8 +156,8 @@ const Contact = () => {
               />
             </div>
 
-            <Button type="submit" className="w-full" size="lg">
-              {t.contact.submit}
+            <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+              {isSubmitting ? "Enviando..." : t.contact.submit}
             </Button>
           </form>
         </div>
