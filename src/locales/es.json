@@ -23,20 +23,70 @@
     "fundedBy": "Financiado por la Unión Europea y el Gobierno de Canarias"
   },
   "solutions": {
-    "title": "Nuestras Soluciones",
-    "description": "Descubre nuestras innovadoras soluciones de captura de CO₂"
+    "title": "Nuestra Solución",
+    "intro": "Como entidad especializada en innovación climática, ofrecemos soluciones para organismos privados y públicos relacionados con la sostenibilidad y la captura de carbono.",
+    "services": "Servicios",
+    "servicesList": {
+      "environmental": "Informes de impacto medioambiental",
+      "certificates": "Certificados de captura de carbono en tiempo real para masas forestales y playas",
+      "modeling": "Modelado de huella de carbono y planes de reducción de emisiones",
+      "integration": "Integración de sistemas de captura en infraestructuras críticas (puertos, plantas energéticas, transporte marítimo)",
+      "consulting": "Consultoría estratégica en proyectos de descarbonización",
+      "training": "Formación y talleres sobre tecnologías de captura y valorización de CO₂",
+      "measurement": "Sistemas de medición de CO₂ en interiores (sensores en edificios)",
+      "airTreatment": "Mini tratadores de aire con zeolitas que se activan automáticamente con alta concentración",
+      "visualization": "Visualización en pantallas mostrando la calidad del aire en directo en oficinas e instituciones"
+    },
+    "cards": {
+      "dac": {
+        "title": "Captura Directa del Aire (DAC)",
+        "description": "Sistemas modulares con sorbentes sólidos optimizados para climas cálidos y ventosos."
+      },
+      "occ": {
+        "title": "Captura Post-Combustión (OCC)",
+        "description": "Integración en chimeneas industriales y buques con tasas de captura >90%."
+      },
+      "efuels": {
+        "title": "Producción de E-Fuels",
+        "description": "Síntesis de diésel sintético, metanol, GNL y DME a partir de CO₂ y agua capturados."
+      }
+    }
   },
   "technology": {
-    "title": "Nuestra Tecnología",
-    "description": "Conoce la tecnología detrás de nuestra captura de CO₂"
+    "title": "Tecnologías",
+    "intro": "Tecnologías que ofrecemos",
+    "dac": {
+      "title": "Captura Directa de Aire (DAC)",
+      "description": "Sistemas modulares con sorbentes sólidos optimizados para climas cálidos y ventosos."
+    },
+    "occ": {
+      "title": "Captura Post-Combustión (OCC)",
+      "description": "Integración en chimeneas industriales y buques con tasas de captura >90%."
+    },
+    "efuels": {
+      "title": "Producción de E-Fuels",
+      "description": "Síntesis de diésel sintético, metanol, GNL y DME a partir de CO₂ y agua capturados."
+    },
+    "monitoring": {
+      "title": "Monitoreo en Tiempo Real",
+      "description": "Sensores + IA para seguimiento continuo y certificados digitales."
+    }
   },
   "about": {
     "title": "Acerca de Nosotros",
-    "description": "Conoce más sobre CanaryCarbon y nuestra misión"
+    "mission": "Comenzando como un Spin-off de Involcan, nuestra misión es liderar la transición del sector logístico-portuario hacia la neutralidad climática, alineándonos con regulaciones internacionales como el Pacto Verde Europeo y la estrategia IMO Net Zero 2050.",
+    "transform": "Convertimos los puertos y embarcaciones en infraestructuras sostenibles mediante la implementación de soluciones eficientes y económicamente viables para la captura de carbono.",
+    "longTerm": "A largo plazo, nuestro objetivo es perfeccionar la generación de combustibles sintéticos a partir del syngas producido, lo que nos permitirá competir directamente con las compañías de hidrocarburos y ofrecer soluciones neutras en carbono.",
+    "spinoff": "Spin-off de INVOLCAN",
+    "tagline": "De Canarias para el mundo, llevando la innovación climática a escala global."
   },
   "liveData": {
     "title": "Datos en Vivo",
-    "description": "Monitorea nuestros datos de captura de CO₂ en tiempo real"
+    "comingSoon": "Próximamente"
+  },
+  "partners": {
+    "title": "Partners & Colaboradores",
+    "interested": "¿Interesado en colaborar?"
   },
   "theme": {
     "light": "Claro",

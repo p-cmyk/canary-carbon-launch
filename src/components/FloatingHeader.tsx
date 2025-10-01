@@ -19,8 +19,8 @@ export function FloatingHeader() {
         </div>
 
         {/* Center Navigation with Background */}
-        <div className="flex items-center h-full">
-          <div className="hidden md:flex items-center h-full bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 shadow-lg">
+        <div className="flex items-center h-full gap-4">
+          <div className="hidden md:flex items-center h-full bg-card/80 backdrop-blur-md border border-border rounded-full px-6 shadow-lg">
             <Link to="/solutions" className="h-full flex items-center">
               <Button variant="ghost" className="h-full text-foreground hover:text-primary transition-colors">
                 {t.nav.solutions}
@@ -38,8 +38,8 @@ export function FloatingHeader() {
             </Link>
           </div>
           
-          {/* Live Data Button - Outside the background */}
-          <Link to="/live-data" className="h-full flex items-center ml-4">
+          {/* Live Data Button */}
+          <Link to="/live-data" className="h-full flex items-center">
             <Button 
               variant="ghost" 
               className="h-full text-live-data hover:text-live-data/80 font-semibold transition-colors bg-live-data/10 border border-live-data/30 rounded-full px-6"
@@ -49,10 +49,11 @@ export function FloatingHeader() {
           </Link>
         </div>
 
-        {/* Theme and Language toggles */}
-        <div className="flex items-center h-full">
+        {/* Right side: Theme toggles, Language toggle, and Brand name */}
+        <div className="flex items-center h-full gap-4">
           <ThemeToggle />
           <LanguageToggle />
+          <span className="text-xl font-bold text-foreground hidden lg:block">CanaryCarbon</span>
         </div>
       </nav>
     </header>

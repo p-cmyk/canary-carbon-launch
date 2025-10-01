@@ -23,20 +23,70 @@
     "fundedBy": "Funded by the European Union and the Government of the Canary Islands"
   },
   "solutions": {
-    "title": "Our Solutions",
-    "description": "Discover our innovative CO₂ capture solutions"
+    "title": "Our Solution",
+    "intro": "As an entity specialized in climate innovation, we offer solutions for private and public organizations related to sustainability and carbon capture.",
+    "services": "Services",
+    "servicesList": {
+      "environmental": "Environmental impact reports",
+      "certificates": "Real-time carbon capture certificates for forests and beaches",
+      "modeling": "Carbon footprint modeling and emission reduction plans",
+      "integration": "Integration of capture systems in critical infrastructures (ports, power plants, maritime transport)",
+      "consulting": "Strategic consulting on decarbonization projects",
+      "training": "Training and workshops on CO₂ capture and valorization technologies",
+      "measurement": "Indoor CO₂ measurement systems (building sensors)",
+      "airTreatment": "Mini air treatment units with zeolites that activate automatically with high concentration",
+      "visualization": "Display screens showing live air quality in offices and institutions"
+    },
+    "cards": {
+      "dac": {
+        "title": "Direct Air Capture (DAC)",
+        "description": "Modular systems with solid sorbents optimized for hot and windy climates."
+      },
+      "occ": {
+        "title": "Post-Combustion Capture (OCC)",
+        "description": "Integration in industrial chimneys and ships with capture rates >90%."
+      },
+      "efuels": {
+        "title": "E-Fuels Production",
+        "description": "Synthesis of synthetic diesel, methanol, LNG and DME from captured CO₂ and water."
+      }
+    }
   },
   "technology": {
-    "title": "Our Technology",
-    "description": "Learn about the technology behind our CO₂ capture"
+    "title": "Technologies",
+    "intro": "Technologies we offer",
+    "dac": {
+      "title": "Direct Air Capture (DAC)",
+      "description": "Modular systems with solid sorbents optimized for hot and windy climates."
+    },
+    "occ": {
+      "title": "Post-Combustion Capture (OCC)",
+      "description": "Integration in industrial chimneys and ships with capture rates >90%."
+    },
+    "efuels": {
+      "title": "E-Fuels Production",
+      "description": "Synthesis of synthetic diesel, methanol, LNG and DME from captured CO₂ and water."
+    },
+    "monitoring": {
+      "title": "Real-Time Monitoring",
+      "description": "Sensors + AI for continuous tracking and digital certificates."
+    }
   },
   "about": {
     "title": "About Us",
-    "description": "Learn more about CanaryCarbon and our mission"
+    "mission": "Starting as a Spin-off from Involcan, our mission is to lead the transition of the logistics-port sector towards climate neutrality, aligning with international regulations such as the European Green Deal and the IMO Net Zero 2050 strategy.",
+    "transform": "We transform ports and vessels into sustainable infrastructures through the implementation of efficient and economically viable solutions for carbon capture.",
+    "longTerm": "In the long term, our goal is to perfect the generation of synthetic fuels from the syngas produced, which will allow us to compete directly with hydrocarbon companies and offer carbon-neutral solutions.",
+    "spinoff": "Spin-off from INVOLCAN",
+    "tagline": "From the Canary Islands to the world, bringing climate innovation to a global scale."
   },
   "liveData": {
     "title": "Live Data",
-    "description": "Monitor our real-time CO₂ capture data"
+    "comingSoon": "Coming soon"
+  },
+  "partners": {
+    "title": "Partners & Collaborators",
+    "interested": "Interested in partnering?"
   },
   "theme": {
     "light": "Light",
