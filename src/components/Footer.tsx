@@ -18,12 +18,6 @@ export function Footer() {
               © {new Date().getFullYear()} CanaryCarbon. {t.footer.allRightsReserved}.
             </p>
           </div>
-          
-          <div className="text-center md:text-right">
-            <p className="text-xs text-muted-foreground max-w-xs">
-              {t.footer.fundedBy}
-            </p>
-          </div>
         </div>
       </div>
     </footer>
