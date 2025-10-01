@@ -11,13 +11,24 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const getSystemTheme = (): 'light' | 'dark' => {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  try {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  } catch {
+    return 'light';
+  }
 };
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<ThemeMode>(() => {
-    const stored = localStorage.getItem('theme') as ThemeMode;
-    return stored || 'eco';
+    try {
+      const stored = localStorage.getItem('theme') as ThemeMode;
+      if (stored === 'light' || stored === 'dark' || stored === 'eco' || stored === 'system') {
+        return stored;
+      }
+      return 'eco';
+    } catch {
+      return 'eco';
+    }
   });
 
   const [systemTheme, setSystemTheme] = useState<'light' | 'dark'>(getSystemTheme());
@@ -34,10 +45,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const effectiveTheme = theme === 'system' ? systemTheme : theme === 'eco' ? 'eco' : theme;
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove('light', 'dark', 'eco');
-    root.classList.add(effectiveTheme);
-    localStorage.setItem('theme', theme);
+    try {
+      const root = window.document.documentElement;
+      root.classList.remove('light', 'dark', 'eco');
+      root.classList.add(effectiveTheme);
+      localStorage.setItem('theme', theme);
+    } catch (error) {
+      console.warn('Failed to save theme preference:', error);
+    }
   }, [theme, effectiveTheme]);
 
   const setTheme = (newTheme: ThemeMode) => {

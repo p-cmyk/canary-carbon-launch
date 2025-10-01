@@ -16,19 +16,32 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations: Record<Language, Translations> = { en, es };
 
 const detectBrowserLanguage = (): Language => {
-  const browserLang = navigator.language.toLowerCase();
-  return browserLang.startsWith('es') ? 'es' : 'en';
+  try {
+    const browserLang = navigator?.language?.toLowerCase() || 'en';
+    return browserLang.startsWith('es') ? 'es' : 'en';
+  } catch {
+    return 'en';
+  }
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>(() => {
-    const stored = localStorage.getItem('lang') as Language;
-    return stored || detectBrowserLanguage();
+    try {
+      const stored = localStorage.getItem('lang') as Language;
+      if (stored === 'en' || stored === 'es') return stored;
+      return detectBrowserLanguage();
+    } catch {
+      return 'en';
+    }
   });
 
   useEffect(() => {
-    localStorage.setItem('lang', language);
-    document.documentElement.lang = language;
+    try {
+      localStorage.setItem('lang', language);
+      document.documentElement.lang = language;
+    } catch (error) {
+      console.warn('Failed to save language preference:', error);
+    }
   }, [language]);
 
   const setLanguage = (lang: Language) => {
