@@ -97,5 +97,20 @@
   "language": {
     "spanish": "Español",
     "english": "English"
+  },
+  "contact": {
+    "title": "Solicitar Demo",
+    "subtitle": "Rellene el formulario para solicitar una reunión y ver una demostración de nuestro sistema",
+    "name": "Nombre",
+    "namePlaceholder": "Su nombre completo",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "su@correo.com",
+    "entity": "Entidad",
+    "entityPlaceholder": "Nombre de su organización",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntenos sobre sus necesidades...",
+    "submit": "Enviar Solicitud",
+    "success": "¡Solicitud enviada con éxito! Nos pondremos en contacto pronto.",
+    "error": "Error al enviar la solicitud. Por favor, inténtelo de nuevo."
   }
 }

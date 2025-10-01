@@ -97,5 +97,20 @@
   "language": {
     "spanish": "Español",
     "english": "English"
+  },
+  "contact": {
+    "title": "Request Demo",
+    "subtitle": "Fill out the form to request a meeting and see a demonstration of our system",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "entity": "Entity",
+    "entityPlaceholder": "Your organization name",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your needs...",
+    "submit": "Submit Request",
+    "success": "Request sent successfully! We will contact you soon.",
+    "error": "Error sending request. Please try again."
   }
 }
