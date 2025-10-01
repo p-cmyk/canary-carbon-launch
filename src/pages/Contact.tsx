@@ -56,9 +56,15 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               {t.contact.title}
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-4">
               {t.contact.subtitle}
             </p>
+            <a 
+              href="mailto:info@canary-carbon.com" 
+              className="text-primary hover:text-primary/80 underline text-lg font-medium transition-colors"
+            >
+              info@canary-carbon.com
+            </a>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6 bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg">

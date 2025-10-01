@@ -95,7 +95,7 @@ export function FloatingHeader() {
           <Link to="/live-data" className="hidden md:block">
             <Button 
               variant="ghost" 
-              className="h-12 text-live-data hover:text-live-data/80 font-semibold transition-colors bg-live-data/10 border border-live-data/30 rounded-full px-6"
+              className="h-12 text-live-data hover:text-foreground hover:bg-live-data/20 font-semibold transition-colors bg-live-data/10 border border-live-data/30 rounded-full px-6"
             >
               {t.nav.liveData}
             </Button>

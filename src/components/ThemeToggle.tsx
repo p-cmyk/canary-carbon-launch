@@ -1,4 +1,4 @@
-import { Moon, Sun, Leaf } from "lucide-react";
+import { Moon, Sun, Leaf, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -20,6 +20,8 @@ export function ThemeToggle() {
         return <Sun className="h-4 w-4 text-foreground" />;
       case 'eco':
         return <Leaf className="h-4 w-4 text-foreground" />;
+      case 'system':
+        return <Monitor className="h-4 w-4 text-foreground" />;
       default:
         return <Leaf className="h-4 w-4 text-foreground" />;
     }
@@ -42,15 +44,6 @@ export function ThemeToggle() {
           <Button
             variant="ghost"
             className="justify-start hover:bg-accent"
-            onClick={() => setTheme('dark')}
-          >
-            <Moon className="h-4 w-4 mr-2" />
-            {t.theme.dark}
-            {theme === 'dark' && <span className="ml-auto">✓</span>}
-          </Button>
-          <Button
-            variant="ghost"
-            className="justify-start hover:bg-accent"
             onClick={() => setTheme('light')}
           >
             <Sun className="h-4 w-4 mr-2" />
@@ -60,11 +53,29 @@ export function ThemeToggle() {
           <Button
             variant="ghost"
             className="justify-start hover:bg-accent"
+            onClick={() => setTheme('dark')}
+          >
+            <Moon className="h-4 w-4 mr-2" />
+            {t.theme.dark}
+            {theme === 'dark' && <span className="ml-auto">✓</span>}
+          </Button>
+          <Button
+            variant="ghost"
+            className="justify-start hover:bg-accent"
             onClick={() => setTheme('eco')}
           >
             <Leaf className="h-4 w-4 mr-2" />
             {t.theme.eco}
             {theme === 'eco' && <span className="ml-auto">✓</span>}
+          </Button>
+          <Button
+            variant="ghost"
+            className="justify-start hover:bg-accent"
+            onClick={() => setTheme('system')}
+          >
+            <Monitor className="h-4 w-4 mr-2" />
+            {t.theme.system}
+            {theme === 'system' && <span className="ml-auto">✓</span>}
           </Button>
         </div>
       </PopoverContent>
