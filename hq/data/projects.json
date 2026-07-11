@@ -1,0 +1,9 @@
+{
+  "projects": [
+    { "id": "canicarbon", "name": "Canicarbon S.L.", "kind": "Empresa física · captura CO2", "status": "activo", "color": "#4fd1c5", "desc": "SL en Canarias. 25% Pablo. Subvención Puertos 4.0 presentada (resolución nov), tax lease con Innovalia en estructuración. Producto CC-Air + HR-01 en diseño.", "repo": "p-cmyk/canary-carbon-launch" },
+    { "id": "hq", "name": "HQ (este sistema)", "kind": "Herramienta interna · gestión + agente", "status": "activo", "color": "#5b8def", "desc": "Interfaz local de dirección: ideas, decisiones, finanzas, contactos, presentación TV. Es el canal de trabajo Pablo ↔ Claude.", "repo": "p-cmyk/canary-carbon-launch (carpeta hq/)" },
+    { "id": "rafi", "name": "RaFi", "kind": "Startup · diseño con IA", "status": "activo", "color": "#b58def", "desc": "Herramienta de generación de diseños. Se usará para los renders de CC-Air. Pendiente: darle a Claude acceso al repo o a la web como usuario.", "repo": "— pendiente de conectar —" },
+    { "id": "voicenotes", "name": "App notas + voz + IA", "kind": "Concepto · app móvil (Expo)", "status": "concepto", "color": "#f0b429", "desc": "Notas/grabadora/chat IA con interfaz de nivel Apple, teclado propio, análisis en tiempo real y fichas generadas por IA. Punto crítico: la interfaz de entrada de texto/voz. Ver decisión pendiente con mi análisis de viabilidad.", "repo": "— en PC Tenerife —" },
+    { "id": "parked", "name": "Proyectos aparcados", "kind": "Varios · en nevera", "status": "aparcado", "color": "#8b93a7", "desc": "Ideas y proyectos pausados por si acaso. Añádelos aquí con nombre cuando quieras que los tenga en cuenta.", "repo": "" }
+  ]
+}

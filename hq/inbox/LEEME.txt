@@ -1,0 +1,1 @@
+Deja aquí (hq/inbox/) cualquier documento de Drive, PDF o excel que quieras que lea: haz commit y push, o súbelo por GitHub web.

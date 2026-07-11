@@ -1,0 +1,153 @@
+{
+  "folders": [
+    {
+      "id": "canicarbon",
+      "name": "Canicarbon",
+      "color": "#4fd1c5"
+    },
+    {
+      "id": "producto",
+      "name": "Producto CC-Air / HR-01",
+      "color": "#48bb78"
+    },
+    {
+      "id": "hq",
+      "name": "HQ / Interfaz",
+      "color": "#5b8def"
+    },
+    {
+      "id": "voicenotes",
+      "name": "App notas + voz",
+      "color": "#f0b429"
+    },
+    {
+      "id": "rafi",
+      "name": "RaFi",
+      "color": "#b58def"
+    },
+    {
+      "id": "personal",
+      "name": "Personal",
+      "color": "#f56565"
+    }
+  ],
+  "ideas": [
+    {
+      "id": "id1",
+      "folder": "producto",
+      "title": "Módulo captura CO2 para falso techo, modular con purificador",
+      "date": "2026-07-11",
+      "status": "en curso",
+      "notes": "Cassette 595×595, cartucho sorbente como consumible (ingreso recurrente). Referencia validada: Soletair Power.",
+      "done": false
+    },
+    {
+      "id": "id2",
+      "folder": "producto",
+      "title": "HR-01: recuperador doble flujo barato para competir con Siber",
+      "date": "2026-07-11",
+      "status": "en curso",
+      "notes": "La jugada Siber: EPS moldeado + precio + catálogo por norma CTE. Entrar 20-30% bajo Siber Optimo. Es la puerta comercial: justifica vender CC-Air acoplado.",
+      "done": false
+    },
+    {
+      "id": "id3",
+      "folder": "producto",
+      "title": "Landing producto: fondo nubes, metalizado, cristal, 'se siente la respiración'",
+      "date": "2026-07-11",
+      "status": "hecho",
+      "notes": "Hecha versión v1 en hq/public/landing.html. Iterar con renders de RaFi.",
+      "done": true
+    },
+    {
+      "id": "id4",
+      "folder": "canicarbon",
+      "title": "Internacionalización estilo S&P: país por país vía normativas locales",
+      "date": "2026-07-11",
+      "status": "pendiente",
+      "notes": "Mapear con qué países trabaja S&P, replicar su estructura de catálogo por regulación. Fase post-lanzamiento España.",
+      "done": false
+    },
+    {
+      "id": "id5",
+      "folder": "canicarbon",
+      "title": "Registro de contactos con grupos de interés y colores",
+      "date": "2026-07-11",
+      "status": "hecho",
+      "notes": "Implementado en sección Contactos. Faltan los datos reales: nombres, cargos, correos.",
+      "done": true
+    },
+    {
+      "id": "id6",
+      "folder": "hq",
+      "title": "Sistema de decisiones con botones + registro que Claude lee",
+      "date": "2026-07-11",
+      "status": "hecho",
+      "notes": "Cada clic queda en events.jsonl con fecha y motivo opcional. Claude lo lee al inicio de cada sesión (protocolo en CLAUDE.md).",
+      "done": true
+    },
+    {
+      "id": "id7",
+      "folder": "hq",
+      "title": "Modo presentación TV/Chromecast con tarjetas gigantes",
+      "date": "2026-07-11",
+      "status": "hecho",
+      "notes": "Sección Presentación: tipografía escalada, flechas/gestos, botón cast con instrucciones (Chrome > Enviar pestaña).",
+      "done": true
+    },
+    {
+      "id": "id8",
+      "folder": "hq",
+      "title": "Loop de automejora por niveles (básico → radical) en cada interacción",
+      "date": "2026-07-11",
+      "status": "en curso",
+      "notes": "Protocolo: en cada mensaje de Pablo, Claude revisa eventos nuevos + hace 1 micro-mejora de interfaz + propone mejoras mayores como tarjetas de decisión. Sin equipos de agentes: un solo contexto.",
+      "done": false
+    },
+    {
+      "id": "id9",
+      "folder": "voicenotes",
+      "title": "Grabadora de voz nivel Apple: onda en tiempo real, transcripción live, fichas IA",
+      "date": "2026-07-11",
+      "status": "pendiente",
+      "notes": "El pastel está en la interfaz de entrada (voz+teclado+IA integrados). Ver mi análisis de viabilidad en la tarjeta de decisión correspondiente.",
+      "done": false
+    },
+    {
+      "id": "id10",
+      "folder": "voicenotes",
+      "title": "Modos de coste: manual / siempre encendido, precio ligado a grabación",
+      "date": "2026-07-11",
+      "status": "pendiente",
+      "notes": "Modular precio según minutos de audio procesados y nivel de IA en tiempo real. Voz rápida (modelo pequeño) + análisis profundo diferido.",
+      "done": false
+    },
+    {
+      "id": "id11",
+      "folder": "rafi",
+      "title": "Usar RaFi para generar los renders de CC-Air",
+      "date": "2026-07-11",
+      "status": "pendiente",
+      "notes": "Pendiente: Pablo pasa el repo o acceso web. Cuando esté, Claude genera los diseños directamente al marcar la tarjeta.",
+      "done": false
+    },
+    {
+      "id": "id12",
+      "folder": "personal",
+      "title": "Panel personal: cómo me afecta cada negocio (riesgo, impuestos, satisfacción)",
+      "date": "2026-07-11",
+      "status": "hecho",
+      "notes": "Sección Perfil: sliders ajustables con texto explicativo, proyección de caja con marcador móvil.",
+      "done": true
+    },
+    {
+      "id": "id13",
+      "folder": "hq",
+      "title": "Leer los chats de Claude Code del PC de Tenerife desde la interfaz",
+      "date": "2026-07-11",
+      "status": "en curso",
+      "notes": "Script tools/claude-sessions-export.mjs: indexa ~/.claude/projects/*.jsonl y lo vuelca a hq/data/claude-sessions.json. Ejecutar en el PC de Tenerife y hacer push. Fase 2: lanzar agentes remotos desde la interfaz.",
+      "done": false
+    }
+  ]
+}

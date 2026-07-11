@@ -1,0 +1,42 @@
+{
+  "currency": "EUR",
+  "scenarios": [
+    {
+      "id": "base",
+      "name": "Base (sin subvención)",
+      "desc": "Solo capital propio + tax lease parcial. Producto avanza lento, foco en preventa.",
+      "monthly": [
+        { "month": "2026-08", "in": 0, "out": 1800 }, { "month": "2026-09", "in": 0, "out": 2200 },
+        { "month": "2026-10", "in": 0, "out": 2500 }, { "month": "2026-11", "in": 0, "out": 2500 },
+        { "month": "2026-12", "in": 15000, "out": 4000 }, { "month": "2027-01", "in": 0, "out": 6000 },
+        { "month": "2027-02", "in": 0, "out": 6000 }, { "month": "2027-03", "in": 8000, "out": 7000 },
+        { "month": "2027-04", "in": 0, "out": 7000 }, { "month": "2027-05", "in": 12000, "out": 8000 },
+        { "month": "2027-06", "in": 20000, "out": 9000 }
+      ],
+      "note": "Diciembre: entrada estimada tax lease tramo 1. Primavera: primeras preventas HR-01."
+    },
+    {
+      "id": "puertos",
+      "name": "Con Puertos 4.0 (1M€)",
+      "desc": "Concedida en noviembre: contratación equipo, prototipo acelerado, certificaciones.",
+      "monthly": [
+        { "month": "2026-08", "in": 0, "out": 1800 }, { "month": "2026-09", "in": 0, "out": 2200 },
+        { "month": "2026-10", "in": 0, "out": 2500 }, { "month": "2026-11", "in": 400000, "out": 2500 },
+        { "month": "2026-12", "in": 15000, "out": 25000 }, { "month": "2027-01", "in": 0, "out": 45000 },
+        { "month": "2027-02", "in": 0, "out": 50000 }, { "month": "2027-03", "in": 300000, "out": 55000 },
+        { "month": "2027-04", "in": 0, "out": 60000 }, { "month": "2027-05", "in": 12000, "out": 65000 },
+        { "month": "2027-06", "in": 300000, "out": 70000 }
+      ],
+      "note": "Pagos de subvención por hitos (estimado 40/30/30). El gasto escala con equipo e ingeniería."
+    }
+  ],
+  "budgetLines": [
+    { "concept": "Ingeniería y prototipado CC-Air", "annual": 120000, "phase": "2026 H2 - 2027 H1" },
+    { "concept": "Renders, diseño industrial y marca", "annual": 18000, "phase": "2026 H2" },
+    { "concept": "Certificaciones (CE, ErP, ensayos)", "annual": 35000, "phase": "2027" },
+    { "concept": "Moldes y utillaje HR-01", "annual": 60000, "phase": "2027" },
+    { "concept": "Marketing y canal (ferias, catálogo, web)", "annual": 25000, "phase": "2027" },
+    { "concept": "Gestoría, legal, consultoría subvenciones", "annual": 15000, "phase": "continuo" },
+    { "concept": "Operativa (oficina, software, viajes)", "annual": 20000, "phase": "continuo" }
+  ]
+}

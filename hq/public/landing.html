@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CC-Air — Se siente la respiración</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+    color: #eef2f8; background: #0b1018; overflow-x: hidden;
+  }
+  /* cielo de nubes */
+  .sky {
+    position: fixed; inset: 0; z-index: -1;
+    background:
+      radial-gradient(60vw 30vh at 20% 15%, rgba(255,255,255,.13), transparent 70%),
+      radial-gradient(50vw 26vh at 75% 8%, rgba(255,255,255,.10), transparent 70%),
+      radial-gradient(70vw 34vh at 50% 30%, rgba(200,220,255,.08), transparent 70%),
+      radial-gradient(80vw 60vh at 50% 110%, rgba(79,209,197,.10), transparent 60%),
+      linear-gradient(180deg, #182338 0%, #0e1522 45%, #0b1018 100%);
+    animation: drift 40s ease-in-out infinite alternate;
+  }
+  @keyframes drift { from { background-position: 0 0; } to { background-position: 60px -20px, -50px 10px, 30px 0, 0 0, 0 0; } }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: clamp(20px, 4vw, 48px); }
+  header { display: flex; justify-content: space-between; align-items: center; padding-top: 8px; }
+  .logo { font-weight: 800; letter-spacing: .2em; font-size: 15px; }
+  .logo span { color: #4fd1c5; }
+  .hero { min-height: 82vh; display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; }
+  .hero h1 {
+    font-size: clamp(44px, 9vw, 120px); font-weight: 800; letter-spacing: -.03em; line-height: .98;
+    background: linear-gradient(170deg, #ffffff 20%, #b9c6dd 50%, #6d7f9c 90%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .hero p.sub { font-size: clamp(17px, 2.4vw, 28px); color: #9fb0c8; margin: 22px 0 40px; max-width: 22em; }
+  .breath {
+    width: clamp(180px, 30vw, 320px); aspect-ratio: 1; border-radius: 50%; margin: 10px auto 34px;
+    background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.25), rgba(255,255,255,.02) 45%),
+      radial-gradient(circle at 60% 70%, rgba(79,209,197,.35), transparent 60%),
+      linear-gradient(160deg, #2a3650 0%, #141b2a 100%);
+    background-color: #141b2a;
+    border: 1px solid rgba(255,255,255,.14);
+    box-shadow: 0 0 80px rgba(79,209,197,.25), inset 0 1px 1px rgba(255,255,255,.2);
+    animation: breathe 6s ease-in-out infinite;
+    display: grid; place-content: center; font-size: clamp(13px, 1.4vw, 18px); color: #bfeae5; letter-spacing: .3em;
+  }
+  @keyframes breathe { 0%,100% { transform: scale(1); box-shadow: 0 0 60px rgba(79,209,197,.18); } 50% { transform: scale(1.06); box-shadow: 0 0 110px rgba(79,209,197,.4); } }
+  .cta { display: inline-block; background: linear-gradient(135deg, #2dd4bf, #14b8a6); color: #03211d; font-weight: 700; padding: 16px 38px; border-radius: 18px; text-decoration: none; font-size: 18px; box-shadow: 0 10px 40px rgba(45,212,191,.35); }
+  section { padding: clamp(40px, 7vw, 90px) 0; }
+  .glassgrid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+  .g {
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 22px;
+    padding: 30px; backdrop-filter: blur(18px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 20px 50px rgba(0,0,0,.35);
+  }
+  .g h3 { font-size: 22px; margin-bottom: 10px; letter-spacing: -.01em; }
+  .g p { color: #9fb0c8; font-size: 15.5px; line-height: 1.6; }
+  .g .n { font-size: 44px; font-weight: 800; letter-spacing: -.03em; color: #4fd1c5; }
+  h2.sec { font-size: clamp(28px, 4.5vw, 52px); letter-spacing: -.02em; text-align: center; margin-bottom: clamp(24px, 4vw, 48px); }
+  .metalbar {
+    border-radius: 26px; padding: clamp(28px, 5vw, 60px); text-align: center;
+    background: linear-gradient(160deg, #2b3550 0%, #171f30 40%, #202a40 70%, #121826 100%);
+    border: 1px solid rgba(255,255,255,.14); box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 30px 80px rgba(0,0,0,.4);
+  }
+  footer { text-align: center; color: #5f6b80; font-size: 13px; padding: 40px 0; }
+</style>
+</head>
+<body>
+<div class="sky"></div>
+<div class="wrap">
+  <header>
+    <div class="logo">CANICARBON <span>AIR</span></div>
+    <a class="logo" style="color:#4fd1c5;text-decoration:none" href="index.html">HQ →</a>
+  </header>
+
+  <div class="hero">
+    <div class="breath">RESPIRA</div>
+    <h1>Se siente<br>la respiración.</h1>
+    <p class="sub">El primer módulo de falso techo que ventila, purifica y captura CO₂. Diseñado en Canarias. Silencioso como el aire limpio.</p>
+    <a class="cta" href="mailto:pablo.pacheco87@gmail.com?subject=Dossier CC-Air">Quiero el dossier</a>
+  </div>
+
+  <section>
+    <h2 class="sec">Un techo que trabaja</h2>
+    <div class="glassgrid">
+      <div class="g"><div class="n">CO₂↓</div><h3>Captura de carbono</h3><p>Cartucho de sorbente sólido que atrapa CO₂ del aire interior. Medible en tu móvil, gramo a gramo. El edificio deja de ser el problema.</p></div>
+      <div class="g"><div class="n">H13</div><h3>Purificación real</h3><p>Prefiltro + HEPA + carbón activo. Partículas, polen y compuestos volátiles fuera del aire que respiran los tuyos.</p></div>
+      <div class="g"><div class="n">CTE</div><h3>Cumple la norma</h3><p>Diseñado sobre las exigencias del CTE DB HS3 y RITE. Modular con nuestro recuperador de calor HR-01: un solo hueco, dos trabajos.</p></div>
+      <div class="g"><div class="n">&lt;30dB</div><h3>Silencio</h3><p>Ventilación EC de bajo consumo. Se instala en el falso techo y desaparece: solo queda el aire.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="metalbar">
+      <h2 class="sec" style="margin-bottom:14px">Programa early</h2>
+      <p style="color:#9fb0c8;max-width:34em;margin:0 auto 26px">Buscamos 3 instaladoras y 1 edificio demostrador en Canarias. Primeras unidades a precio de socio, soporte directo de fábrica y vuestra obra como caso de éxito.</p>
+      <a class="cta" href="mailto:pablo.pacheco87@gmail.com?subject=Programa early CC-Air">Unirme al programa</a>
+    </div>
+  </section>
+
+  <footer>Canicarbon S.L. · Islas Canarias · Prototipo de landing v1 — los renders finales llegarán con RaFi</footer>
+</div>
+</body>
+</html>

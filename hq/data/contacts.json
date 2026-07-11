@@ -1,0 +1,19 @@
+{
+  "groups": [
+    { "id": "institucional", "name": "Institucional / Subvenciones", "color": "#5b8def", "desc": "Administraciones, puertos, universidades. Nos abren puertas y financiación pública." },
+    { "id": "consultoria", "name": "Consultoría / Legal", "color": "#b58def", "desc": "Nos estructuran subvenciones, tax lease y papeles." },
+    { "id": "inversion", "name": "Inversión", "color": "#f0b429", "desc": "Ponen dinero: AIE tax lease, business angels, socios capitalistas." },
+    { "id": "prescriptor", "name": "Prescriptores", "color": "#4fd1c5", "desc": "Arquitectos, ingenierías: deciden qué producto entra en el proyecto." },
+    { "id": "cliente", "name": "Clientes / Canal", "color": "#48bb78", "desc": "Instaladoras, distribuidores, promotoras: los que compran de verdad." },
+    { "id": "industrial", "name": "Partners industriales", "color": "#ed8936", "desc": "Fabricación, moldes, sorbentes, ensamblaje." },
+    { "id": "media", "name": "Media / Comunidad", "color": "#f56565", "desc": "Prensa, LinkedIn, eventos del sector." }
+  ],
+  "contacts": [
+    { "id": "c1", "name": "Innovalia (consultoría)", "person": "— completar persona de contacto —", "role": "Estructuración Tax Lease I+D+i", "group": "consultoria", "company": "Innovalia", "money": "Canalizan financiación privada vía AIE", "notes": "Confirmar estado del Informe Motivado Vinculante y certificación ENAC.", "links": [] },
+    { "id": "c2", "name": "Puertos del Estado / Ports 4.0", "person": "— oficina técnica Ports 4.0 —", "role": "Gestor del fondo Puertos 4.0", "group": "institucional", "company": "Puertos del Estado", "money": "Subvención hasta 1M€", "notes": "Resolución esperada noviembre. Preparar justificación y plan B si no se concede.", "links": ["https://ports40.es"] },
+    { "id": "c3", "name": "Autoridad Portuaria (Canarias)", "person": "— completar —", "role": "Partner institucional / posible edificio demostrador", "group": "institucional", "company": "Autoridad Portuaria", "money": "", "notes": "Ya es partner de la landing. Candidato ideal para piloto CC-Air en sus oficinas.", "links": [] },
+    { "id": "c4", "name": "INVOLCAN", "person": "— completar —", "role": "Partner científico (CO2 volcánico / medición)", "group": "institucional", "company": "INVOLCAN", "money": "", "notes": "Refuerza credibilidad técnica en medición de CO2.", "links": [] },
+    { "id": "c5", "name": "Universidad de La Laguna", "person": "— completar —", "role": "Partner I+D (sorbentes, ensayos)", "group": "institucional", "company": "ULL", "money": "Posible convenio I+D (cuenta para art.35 LIS)", "notes": "Un convenio universidad-empresa refuerza el tax lease.", "links": [] },
+    { "id": "c6", "name": "Socios Canicarbon (75%)", "person": "— completar nombres —", "role": "Socios mayoritarios", "group": "inversion", "company": "Canicarbon S.L.", "money": "Capital fundacional", "notes": "Completar cap table real, pactos de socios y quién firma qué.", "links": [] }
+  ]
+}

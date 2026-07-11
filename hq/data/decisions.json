@@ -1,0 +1,86 @@
+{
+  "decisions": [
+    {
+      "id": "d1", "scope": "producto", "type": "decision", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Alcance del MVP de producto",
+      "body": "Tenemos dos productos posibles. CC-Air (captura CO2, nuestra esencia, más riesgo técnico) y HR-01 (recuperador de calor, mercado probado por Siber, más fácil de vender). La estrategia modular permite empezar por uno.",
+      "options": [
+        { "id": "a", "label": "HR-01 primero", "detail": "Entrar al mercado con lo que ya se compra (recuperadores CTE), añadir CC-Air como módulo diferenciador después. Menos riesgo, ingresos antes." },
+        { "id": "b", "label": "CC-Air primero", "detail": "Fieles a la misión: captura de CO2 como purificador premium. Más historia para subvenciones y prensa, mercado por crear." },
+        { "id": "c", "label": "Los dos en paralelo", "detail": "Dossier conjunto modular desde el día 1. Más caro y lento, pero la historia comercial es más redonda." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d2", "scope": "producto", "type": "decision", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Nombre comercial del módulo de captura",
+      "body": "Para renders, landing y dossier necesitamos nombre. Propuestas (dominio y marca por verificar):",
+      "options": [
+        { "id": "a", "label": "CaniCarbon Air", "detail": "Continuidad con la marca empresa." },
+        { "id": "b", "label": "Breathe", "detail": "'Se siente la respiración'. Corto, internacional." },
+        { "id": "c", "label": "CO2NULL", "detail": "Técnico, agresivo, memorable en B2B." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d3", "scope": "rafi", "type": "question", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Acceso a RaFi para generar los diseños",
+      "body": "Para que yo genere los renders de CC-Air con RaFi necesito acceso. La mejor opción es el repositorio (lo integro en sesión y lo uso directamente); la alternativa es la web como usuario (necesitaría URL + credenciales, menos fiable).",
+      "options": [
+        { "id": "a", "label": "Te paso el repo", "detail": "Dime 'añade <owner>/<repo>' aquí en el chat y lo conecto a la sesión." },
+        { "id": "b", "label": "Acceso web como usuario", "detail": "Escribe abajo la URL y cómo entro." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d4", "scope": "empresa", "type": "info", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Aviso importante: el tax lease no es un trapicheo (y eso es bueno)",
+      "body": "Lo que describes (transferir la empresa y devolverla) NO es como funciona el tax lease legal. El mecanismo real: se crea una AIE (Agrupación de Interés Económico), los inversores entran en la AIE (no se quedan tu empresa), la AIE ejecuta el proyecto I+D y las deducciones fiscales del art. 35 LIS fluyen a los inversores. Tú recibes el 75-85% del valor de la deducción como financiación sin deuda. Requiere: certificación ENAC + Informe Motivado Vinculante del Ministerio. Mi recomendación como tu agente: pide a Innovalia la estructura EXACTA por escrito y que un abogado independiente (no el suyo) la revise antes de firmar nada que toque tus participaciones.",
+      "options": [
+        { "id": "a", "label": "Entendido, pido la estructura por escrito", "detail": "Te preparo el email para Innovalia pidiendo la documentación." },
+        { "id": "b", "label": "Ya la tengo, te la paso", "detail": "Súbela al repo (hq/inbox/) o pégala en el chat y la analizo." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d5", "scope": "voicenotes", "type": "info", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Mi opinión honesta sobre la app de notas + voz",
+      "body": "Me preguntaste si merece la pena si Claude/ChatGPT ya hacen voz. Mi análisis: como 'chat con IA por voz' NO merece la pena — ahí compites con Anthropic, OpenAI y Apple con presupuesto infinito. Pero tu instinto sobre DÓNDE está el hueco es correcto: no existe una app que una (1) grabadora nivel Apple, (2) transcripción en vivo, (3) fichas/acciones generadas por IA en tiempo real y (4) TU archivo personal organizado con periodicidad. Voicenotes.com y Wispr Flow atacan trozos, nadie el conjunto con interfaz 'de leyenda'. Mi recomendación: NO empezar por el teclado propio (agujero negro de meses); empezar por la pantalla de captura voz→fichas, que es tu diferencial real. Y es el proyecto nº3 en prioridad: Canicarbon tiene fechas reales (noviembre) y dinero real delante.",
+      "options": [
+        { "id": "a", "label": "De acuerdo: en cola detrás de Canicarbon", "detail": "La dejamos en concepto, yo te preparo el plan técnico de la pantalla de captura para cuando toque." },
+        { "id": "b", "label": "No: quiero avanzarla ya en paralelo", "detail": "Te preparo plan técnico completo (Expo + audio streaming + modelo rápido) esta semana." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d6", "scope": "empresa", "type": "question", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Datos reales que solo tú tienes (para quitar los placeholders)",
+      "body": "He montado todo con estimaciones marcadas como '— completar —'. Para que las finanzas y el cap table sean reales necesito: (1) nombres y % exactos de los socios, (2) tus ingresos/gastos personales reales, (3) persona de contacto en Innovalia, (4) estado exacto de la solicitud Puertos 4.0 (¿modalidad idea, precomercial o comercial?). Escríbelo abajo o dímelo por el chat, como prefieras.",
+      "options": [
+        { "id": "a", "label": "Te lo escribo aquí abajo", "detail": "Usa el campo de texto." },
+        { "id": "b", "label": "Conecto Google Drive y lo lees tú", "detail": "En claude.ai > Configuración > Conectores, activa Google Drive; en esta sesión no lo tengo disponible todavía." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d7", "scope": "interfaz", "type": "decision", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "¿Apruebas el diseño v1 del HQ?",
+      "body": "Primera versión: oscura, metálica, tarjetas de cristal, tipografía escalada para TV. El loop de automejora está activo: en cada mensaje tuyo haré una micro-mejora y te propondré las grandes aquí. Dime la primera cosa que cambiarías.",
+      "options": [
+        { "id": "a", "label": "Aprobado, itera en pequeño", "detail": "Mejora continua nivel básico en cada interacción." },
+        { "id": "b", "label": "Cambios grandes primero", "detail": "Escribe abajo qué no te convence y lo rehago antes de seguir." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    },
+    {
+      "id": "d8", "scope": "producto", "type": "decision", "status": "pendiente", "createdAt": "2026-07-11",
+      "title": "Primer movimiento comercial (coste ~0€)",
+      "body": "Antes de gastar en prototipo: validar con humanos. Propongo enseñar el dossier + renders a 10 personas del sector y pedir cartas de interés. Los emails ya están redactados en Docs > Kit de marketing.",
+      "options": [
+        { "id": "a", "label": "Sí: validación con 10 contactos", "detail": "Tú pones nombres reales a los 10 contactos en la sección Contactos; yo personalizo cada email." },
+        { "id": "b", "label": "Antes quiero los renders", "detail": "Bloqueado por acceso a RaFi (tarjeta anterior) o los genero yo con otra herramienta." }
+      ],
+      "allowText": true, "answer": null, "reason": null, "decidedAt": null
+    }
+  ]
+}

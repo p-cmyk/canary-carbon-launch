@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": "cc-air",
+      "name": "CaniCarbon Air (CC-01)",
+      "shortName": "CC-Air",
+      "status": "diseño",
+      "concept": "Módulo compacto para falso techo que captura CO2 del aire interior y lo purifica (filtro partículas + carbón activo). Diseño sleek metalizado, 'se siente la respiración'. Modular: se acopla al recuperador HR-01 o funciona solo.",
+      "reference": "Soletair Power (Finlandia) ya valida el concepto a escala edificio: sorbente sólido de amina + TVSA integrado en climatización, ~20 t CO2/año por unidad de 3,3 m³/s, sin ruido añadido. Nuestro ángulo: miniaturización residencial/terciario ligero + estética + modularidad con ventilación obligatoria por CTE.",
+      "targetSpecs": {
+        "formato": "Cassette falso techo 595×595 mm (módulo estándar techo técnico) o conducto inline",
+        "caudal": "hasta 100 m³/h por módulo",
+        "captura": "objetivo 30-80 kg CO2/año por módulo (a validar en prototipo)",
+        "purificacion": "Prefiltro G4 + HEPA H13 opcional + carbón activo",
+        "ruido": "< 30 dB(A)",
+        "conectividad": "Sensor CO2/VOC + app + API"
+      },
+      "bom": [
+        { "item": "Carcasa metálica + frontal diseño", "cost": 28 },
+        { "item": "Ventilador EC silencioso", "cost": 22 },
+        { "item": "Cartucho sorbente CO2 (consumible)", "cost": 35 },
+        { "item": "Filtros (G4 + carbón activo)", "cost": 12 },
+        { "item": "Electrónica + sensores CO2/VOC", "cost": 24 },
+        { "item": "Ensamblaje + embalaje", "cost": 18 }
+      ],
+      "pricing": { "bomTotal": 139, "targetPvp": 449, "recambioAnual": 79, "margen": "PVP ~3,2× BOM + consumible recurrente (modelo cartucho = ingresos recurrentes)" },
+      "gtm": "1) Renders y landing → 2) enseñar a 10 prescriptores (arquitectos/ingenierías) y 3 instaladoras → 3) si hay 3 cartas de interés, prototipo → 4) piloto en obra real (contacto Autoridad Portuaria/Gobierno Canarias como edificio demostrador) → 5) venta B2B a instaladoras y promotoras, no B2C.",
+      "risks": ["La captura miniaturizada puede rendir poco: vender primero como purificador premium con captura como diferenciador", "Consumible: logística de recarga/reciclado del sorbente", "Certificaciones CE/ErP"]
+    },
+    {
+      "id": "hr-01",
+      "name": "Recuperador modular HR-01",
+      "shortName": "HR-01",
+      "status": "concepto",
+      "concept": "Recuperador de calor de doble flujo para falso techo (el producto que ya venden Siber y S&P y que exige el mercado por CTE DB HS3). Es la puerta de entrada comercial: el instalador YA compra esto. CC-Air se acopla como módulo. Vendemos los dos o cada uno por separado.",
+      "reference": "Siber es líder español (participa en >60% de proyectos de obra nueva; gamas Basic/Optimo/Premium, DF EVO hasta 95% eficiencia). S&P es el líder mundial. Precio instalado de un recuperador de techo en generador CYPE: ~1.500-3.500€. Nuestro hueco: precio agresivo + diseño + modularidad captura.",
+      "targetSpecs": {
+        "formato": "Ultraplano falso techo, <30 cm altura",
+        "caudal": "hasta 300 m³/h (vivienda tipo 2-3 dormitorios, caudales CTE: 33 l/s total)",
+        "eficiencia": "recuperación > 85%",
+        "cumple": "CTE DB HS3 (caudales mínimos por local), RITE, ErP"
+      },
+      "bom": [
+        { "item": "Intercambiador de flujo cruzado", "cost": 55 },
+        { "item": "2× ventiladores EC", "cost": 48 },
+        { "item": "Carcasa EPS/chapa (la 'caja de porexpan' — EPS moldeado es barato y aísla)", "cost": 30 },
+        { "item": "Filtros F7/G4", "cost": 14 },
+        { "item": "Electrónica + bypass", "cost": 38 },
+        { "item": "Ensamblaje + embalaje", "cost": 25 }
+      ],
+      "pricing": { "bomTotal": 210, "targetPvp": 690, "recambioAnual": 45, "margen": "Entrar 20-30% por debajo de Siber Optimo con diseño superior. El instalador decide por precio: si estás en precio y el diseño es aceptable, vendes." },
+      "gtm": "OEM/marca propia: fabricar con partner (moldes EPS + ensamblaje en España o Portugal). Canal: distribuidores de climatización + instaladoras + prescripción en arquitectos. Catálogo por tipología de vivienda según caudales CTE (como hace S&P: cada producto responde a una exigencia normativa concreta).",
+      "risks": ["Competir con Siber/S&P exige certificados y catálogo técnico impecable", "Capital para moldes e inventario", "Guerra de precio con producto chino de importación"]
+    }
+  ],
+  "competitors": [
+    { "name": "Soler & Palau (S&P)", "country": "España (global)", "focus": "Líder mundial ventilación. Gama completa VMC simple y doble flujo mapeada a CTE DB HS3. Crece comprando empresas locales país a país.", "threat": "alto", "learn": "Su estructura de catálogo por norma/país es el manual a copiar para internacionalizar." },
+    { "name": "Siber Zone S.L.U.", "country": "España", "focus": "Líder nacional VMC residencial doble flujo (Basic/Optimo/Premium, DF EVO 95% eficiencia). Presente en >60% de obra nueva.", "threat": "alto", "learn": "Empezó nicho (doble flujo residencial) cuando los grandes no le daban prioridad. Nuestro HR-01 replica su jugada con mejor precio/diseño." },
+    { "name": "Zehnder", "country": "Suiza/Alemania", "focus": "Gama premium de recuperadores residenciales (ComfoAir).", "threat": "medio", "learn": "Techo de precio del mercado premium." },
+    { "name": "Soletair Power", "country": "Finlandia", "focus": "Captura de CO2 integrada en HVAC de edificios (TVSA, sorbente amina). ~20 t/año por unidad grande. Vende a propietarios de edificios y hasta CO2 para combustible.", "threat": "medio", "learn": "Valida técnica y comercialmente la captura en edificios. No están en residencial pequeño ni en España: ese es nuestro hueco. Posible partner/licencia de sorbente." }
+  ],
+  "regulation": {
+    "summary": "CTE DB HS3 (calidad de aire interior) obliga a ventilación en viviendas: dormitorio principal 8 l/s, dormitorios 4 l/s, salón 6-10 l/s, cocina extracción 50 l/s; totales típicos 12/24/33 l/s según dormitorios. RITE regula instalaciones térmicas. Esto crea demanda OBLIGATORIA por ley en obra nueva y gran reforma: el producto no se vende por gusto, se vende por licencia de obra.",
+    "sources": ["CTE DB HS3", "RITE", "Reglamento ErP (ecodiseño ventiladores)", "Marcado CE"]
+  }
+}

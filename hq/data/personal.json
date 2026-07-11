@@ -1,0 +1,52 @@
+{
+  "owner": "Pablo Pacheco",
+  "monthly": {
+    "incomes": [
+      { "id": "i1", "name": "Trabajo actual / nómina", "amount": 1600, "note": "— ajusta la cifra real —" },
+      { "id": "i2", "name": "Otros ingresos", "amount": 0, "note": "" }
+    ],
+    "expenses": [
+      { "id": "e1", "name": "Vivienda", "amount": 650, "note": "— ajusta —" },
+      { "id": "e2", "name": "Comida y básicos", "amount": 350, "note": "" },
+      { "id": "e3", "name": "Transporte", "amount": 120, "note": "" },
+      { "id": "e4", "name": "Suscripciones y herramientas (IA, software)", "amount": 120, "note": "Claude, hosting, APIs" },
+      { "id": "e5", "name": "Ocio y resto", "amount": 250, "note": "" }
+    ],
+    "savings": 5000
+  },
+  "businessStakes": [
+    {
+      "id": "canicarbon", "name": "Canicarbon S.L. (25%)",
+      "risk": 55, "satisfaction": 80, "invested": "Tiempo + posible aval/impuestos",
+      "expectedIncome": "Si Puertos 4.0 entra (nov): posible nómina/dietas desde 2027. Dividendos improbables antes de 2028.",
+      "taxNote": "Como socio 25%: los dividendos tributan como ahorro (19-28%). Si facturas servicios a la SL, es actividad económica (IRPF + autónomo). Si la sociedad recibe subvención, tributa la SL, no tú. OJO con el tax lease: exige que la operativa esté impecablemente documentada; tú como socio minoritario firma solo lo que entiendas y pide el papel de Innovalia por escrito.",
+      "riskFactors": ["Resolución Puertos 4.0 incierta (nov)", "Tax lease exige documentación perfecta", "Socio minoritario: poca capacidad de decisión formal", "Producto físico = capital intensivo"]
+    },
+    {
+      "id": "rafi", "name": "RaFi (startup diseño IA)",
+      "risk": 40, "satisfaction": 70, "invested": "Tiempo de desarrollo",
+      "expectedIncome": "Sin ingresos aún. Herramienta interna útil para generar diseños de Canicarbon (doble uso).",
+      "taxNote": "Mientras no facture, sin impacto fiscal. Si empieza a facturar: alta de actividad.",
+      "riskFactors": ["Sin modelo de ingresos definido", "Competencia brutal en herramientas de diseño IA"]
+    },
+    {
+      "id": "voicenotes", "name": "App notas + voz + IA (concepto)",
+      "risk": 70, "satisfaction": 85, "invested": "Tiempo",
+      "expectedIncome": "Lejano. Requiere validación antes de invertir más.",
+      "taxNote": "Sin impacto aún.",
+      "riskFactors": ["Mercado saturado (Apple Notes, Voicenotes.com, Wispr Flow, ChatGPT/Claude voz)", "Coste de APIs de voz en tiempo real", "El diferencial (interfaz+teclado) es caro de construir a nivel 'leyenda'"]
+    },
+    {
+      "id": "parked", "name": "Proyectos aparcados (varios)",
+      "risk": 10, "satisfaction": 30, "invested": "Pausados",
+      "expectedIncome": "Ninguno previsto. Mantener en nevera, no gastar energía.",
+      "taxNote": "Sin impacto.",
+      "riskFactors": ["Coste de oportunidad si roban foco"]
+    }
+  ],
+  "projection": {
+    "note": "Proyección personal de caja (ahorros + ingresos - gastos). El marcador 'vivo a partir de aquí con X' es editable en la interfaz.",
+    "marker": { "month": "2027-01", "label": "Objetivo: vivir con ingresos de negocios", "amount": 1200 }
+  },
+  "securityAnalysis": "Situación global: riesgo controlado MIENTRAS mantengas ingreso base y no avales deuda de la SL ni pongas capital que no puedas perder. Tu exposición real hoy es tiempo + oportunidad, no dinero. Señal de alarma: si algún negocio te pide firmar avales personales, garantías o 'transferencias temporales' de participaciones sin informe legal independiente — eso se revisa con abogado propio, no con el de la empresa."
+}

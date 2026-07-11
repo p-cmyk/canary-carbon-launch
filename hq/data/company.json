@@ -1,0 +1,50 @@
+{
+  "name": "Canicarbon S.L.",
+  "tagline": "Captura de carbono y aire limpio, integrados en el edificio",
+  "form": "Sociedad Limitada (España)",
+  "hq": "Islas Canarias, España",
+  "capTable": [
+    { "id": "pablo", "name": "Pablo Pacheco", "pct": 25, "role": "Socio · Producto y estrategia digital", "color": "#4fd1c5" },
+    { "id": "resto", "name": "Resto de socios (por detallar)", "pct": 75, "role": "Pendiente de completar nombres y roles", "color": "#8b93a7" }
+  ],
+  "funding": [
+    {
+      "id": "puertos40",
+      "name": "Puertos 4.0 · Proyectos (Puertos del Estado)",
+      "type": "Subvención pública",
+      "amount": 1000000,
+      "status": "presentada",
+      "probability": 0.35,
+      "resolution": "2026-11-30",
+      "notes": "Fondo de Puertos del Estado para innovación en el sector portuario-logístico. En precomerciales cubre hasta el 60% de los costes con límite de 1M€. Resolución esperada en noviembre. Ver docs/financiacion.md para condiciones, hitos y justificación."
+    },
+    {
+      "id": "taxlease",
+      "name": "Tax Lease I+D+i (con Innovalia)",
+      "type": "Financiación privada vía deducciones fiscales",
+      "amount": null,
+      "status": "en estructuración",
+      "probability": 0.6,
+      "resolution": null,
+      "notes": "Mecanismo legal del art. 35 LIS: se constituye una AIE, inversores privados aportan dinero y se llevan las deducciones fiscales del proyecto de I+D. Se recibe típicamente el 75-85% del valor nominal de la deducción, cubriendo un 30-50% del coste del proyecto, sin deuda ni dilución. Requiere Informe Motivado Vinculante (Ministerio de Ciencia) y certificación previa por entidad acreditada ENAC. No es un 'trapicheo': es una estructura regulada, pero exige papeles en orden. Ver docs/financiacion.md."
+    },
+    {
+      "id": "producto",
+      "name": "Ingresos por producto (CC-Air / HR-01)",
+      "type": "Autofinanciación",
+      "amount": null,
+      "status": "en diseño",
+      "probability": null,
+      "resolution": "2027-06-30",
+      "notes": "El producto de falso techo (captura de CO2 + purificación, modular con recuperador de calor) como vía de ingresos recurrentes para financiar la empresa. Ver sección Producto."
+    }
+  ],
+  "milestones": [
+    { "date": "2026-07-31", "title": "Sistema HQ operativo y datos de empresa completados", "status": "en curso" },
+    { "date": "2026-09-15", "title": "Dossier técnico producto CC-Air v1 (renders + specs)", "status": "pendiente" },
+    { "date": "2026-10-15", "title": "Documentación Tax Lease: certificación ENAC solicitada", "status": "pendiente" },
+    { "date": "2026-11-30", "title": "Resolución Puertos 4.0", "status": "pendiente" },
+    { "date": "2027-01-31", "title": "Prototipo funcional CC-Air", "status": "pendiente" },
+    { "date": "2027-06-30", "title": "Piloto instalado + primeras preventas", "status": "pendiente" }
+  ]
+}

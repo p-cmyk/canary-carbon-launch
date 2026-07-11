@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "id": "g1", "name": "G1 · Empresa y financiación", "color": "#5b8def",
+      "items": [
+        { "date": "2026-07", "title": "HQ operativo + datos reales cargados", "status": "en curso" },
+        { "date": "2026-08", "title": "Estructura tax lease por escrito (Innovalia) + revisión legal independiente", "status": "pendiente" },
+        { "date": "2026-09", "title": "Certificación ENAC solicitada / convenio ULL valorado", "status": "pendiente" },
+        { "date": "2026-11", "title": "Resolución Puertos 4.0 → plan A (concedida) / plan B (denegada)", "status": "pendiente" },
+        { "date": "2026-12", "title": "Cierre financiero del año: tax lease tramo 1", "status": "pendiente" }
+      ]
+    },
+    {
+      "id": "g2", "name": "G2 · Desarrollo de producto", "color": "#48bb78",
+      "items": [
+        { "date": "2026-08", "title": "Renders CC-Air con RaFi + identidad de producto", "status": "pendiente" },
+        { "date": "2026-09", "title": "Dossier técnico v1 (specs, BOM, normativa CTE mapeada)", "status": "pendiente" },
+        { "date": "2026-10", "title": "Selección partner industrial (sorbente + EPS + ensamblaje)", "status": "pendiente" },
+        { "date": "2027-01", "title": "Prototipo funcional CC-Air", "status": "pendiente" },
+        { "date": "2027-03", "title": "Ensayos de captura y ruido documentados", "status": "pendiente" }
+      ]
+    },
+    {
+      "id": "g3", "name": "G3 · Validación y normativa", "color": "#f0b429",
+      "items": [
+        { "date": "2026-09", "title": "10 entrevistas prescriptores/instaladoras (cartas de interés)", "status": "pendiente" },
+        { "date": "2027-02", "title": "Marcado CE + ErP: plan de certificación con laboratorio", "status": "pendiente" },
+        { "date": "2027-05", "title": "Piloto en edificio real (Autoridad Portuaria como candidato)", "status": "pendiente" }
+      ]
+    },
+    {
+      "id": "g4", "name": "G4 · Lanzamiento comercial", "color": "#f56565",
+      "items": [
+        { "date": "2027-04", "title": "Catálogo técnico por tipología CTE + tarifa canal", "status": "pendiente" },
+        { "date": "2027-06", "title": "Lanzamiento: campaña LinkedIn/Instagram + oferta early instalador", "status": "pendiente" },
+        { "date": "2027-09", "title": "Primeros 100 módulos vendidos B2B", "status": "pendiente" },
+        { "date": "2028-01", "title": "Internacionalización fase 1 (Portugal/Francia, modelo S&P)", "status": "pendiente" }
+      ]
+    }
+  ]
+}

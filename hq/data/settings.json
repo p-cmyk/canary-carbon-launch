@@ -1,0 +1,18 @@
+{
+  "devMode": false,
+  "tvMode": false,
+  "theme": "dark",
+  "notesToClaude": "Escribe aquí lo que para ti es importante ahora mismo. Lo leo al principio de cada sesión.",
+  "improvementLoop": {
+    "enabled": true,
+    "level": "basico",
+    "levels": {
+      "basico": "En cada interacción: 1 micro-mejora de interfaz (texto, espaciado, botón) + revisión de eventos nuevos.",
+      "medio": "Además: 1 análisis semanal de una sección completa con propuestas como tarjetas de decisión.",
+      "radical": "Solo bajo petición explícita: rediseño de una sección entera."
+    },
+    "log": [
+      { "date": "2026-07-11", "level": "radical", "what": "Construcción inicial completa del HQ v1", "why": "Petición fundacional de Pablo" }
+    ]
+  }
+}
