@@ -2,6 +2,7 @@ import { FloatingHeader } from "@/components/FloatingHeader";
 import { HeroSection } from "@/components/HeroSection";
 import { Footer } from "@/components/Footer";
 import { Partners } from "@/components/Partners";
+import { AgentFab } from "@/components/AgentFab";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <HeroSection />
       <Partners />
       <Footer />
+      <AgentFab />
     </div>
   );
 };
