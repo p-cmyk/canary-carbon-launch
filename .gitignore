@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Version demo con datos embebidos (PII) - NO subir a repo publico
+hq/standalone.html
